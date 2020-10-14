@@ -8,10 +8,11 @@ Group {
  xpos -39
  ypos -268
  addUserKnob {20 Options}
- addUserKnob {26 info l "" +STARTLINE T "Random_Value_Generator v1.1\nLast Updated: September 29th, 2020."}
  addUserKnob {7 value}
- addUserKnob {22 toggle T "if nuke.thisNode().knob('value').value() == 0:\n    nuke.thisNode().knob('value').setValue(1)\nelse:\n    nuke.thisNode().knob('value').setValue(0)" +STARTLINE}
+ addUserKnob {22 toggle l "Toggle value between 0 and 1." T "if nuke.thisNode().knob('value').value() == 0:\n    nuke.thisNode().knob('value').setValue(1)\nelse:\n    nuke.thisNode().knob('value').setValue(0)" +STARTLINE}
+ addUserKnob {22 random l "Generate random number between 0 and 1." T "import random\n\nnuke.thisNode().knob('value').setValue(random.random())" +STARTLINE}
  addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 info l "" +STARTLINE T "<font color=#666><b>Random_Value_Generator v1.2</b><br>\nLast Updated: September 29th, 2020.</font"}
 }
  Input {
   inputs 0
